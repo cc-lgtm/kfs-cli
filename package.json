@@ -1,0 +1,30 @@
+{
+  "name": "kfs-cli",
+  "version": "1.0.0",
+  "preview": false,
+  "license": "MIT",
+  "description": "一个vue3的生成组件模板和打包，自动注册指定目录的组件，基于vite的脚手架",
+  "type": "commonjs",
+  "author": {
+    "name": "cc-lgtm",
+    "email": "2448856797@qq.com"
+  },
+  "scripts": {
+    "dev": "nodemon ./packages/index.ts",
+    "dev:g": "nodemon ./packages/index.ts generate"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "commander": "^8.3.0",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.2.0",
+    "kolorist": "^1.5.1",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}
