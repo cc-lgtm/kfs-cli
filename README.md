@@ -6,20 +6,17 @@
 ```ts
 yarn add kfs-cli
 ```
-
-#### 配置
+#### 生成组件
 > package.json里`scripts`配置里添加命令:
 
 ```ts
-"kfs-cli": "kfs-cli start"
+"kfs-cli:g": "kfs-cli start -g components"
 ```
-
-#### 生成组件
 
 > `node`运行命令:
 
 ```ts
-yarn kfs-cli -g ./src/components
+yarn kfs-cli:g
 // 将在`src`目录下的`components`文件夹里创建组件模板
 ```
 
@@ -27,9 +24,29 @@ yarn kfs-cli -g ./src/components
 > 需要创建多个组件，则在name输入框以空格分隔
 
 #### 自动注册
+> package.json里`scripts`配置里添加命令:
+
+```ts
+"kfs-cli:r": "kfs-cli start -r components"
+```
+
 > `node`运行命令:
 
 ```ts
-yarn kfs-cli -r ./src/components
+yarn kfs-cli:r
 // components目录下的组件将自动注册成全局组件
+```
+
+#### 打包
+> package.json里`scripts`配置里添加命令:
+
+```ts
+"kfs-cli:b": "kfs-cli start -b components"
+```
+
+> `node`运行命令:
+
+```ts
+yarn kfs-cli:b
+// components里组件打包到lib文件夹
 ```
