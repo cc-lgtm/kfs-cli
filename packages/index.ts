@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-const { generateCMD } = require('./commands')
+require('./commands')

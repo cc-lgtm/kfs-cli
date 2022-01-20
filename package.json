@@ -11,11 +11,11 @@
   },
   "scripts": {
     "dev": "nodemon ./packages/index.ts",
-    "dev:g": "nodemon ./packages/index.ts generate"
+    "kfs-cli:g": "nodemon ./packages/index.ts start -g components",
+    "kfs-cli:r": "nodemon ./packages/index.ts start -r components",
+    "kfs-cli:b": "nodemon ./packages/index.ts start -b components"
   },
-  "dependencies": {
-    "vue": "^3.2.25"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^17.0.10",
     "@vitejs/plugin-vue": "^2.0.0",
