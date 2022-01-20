@@ -14,10 +14,10 @@
     "lib/"
   ],
   "scripts": {
-    "dev": "nodemon ./packages/index.ts",
-    "kfs-cli:g": "nodemon ./packages/index.ts start -g components",
-    "kfs-cli:r": "nodemon ./packages/index.ts start -r components",
-    "kfs-cli:b": "nodemon ./packages/index.ts start -b components"
+    "dev": "ts-node ./packages/index.ts",
+    "kfs-cli:g": "ts-node ./packages/index.ts start -g components",
+    "kfs-cli:r": "ts-node ./packages/index.ts start -r components",
+    "kfs-cli:b": "ts-node ./packages/index.ts start -b components"
   },
   "dependencies": {},
   "devDependencies": {
